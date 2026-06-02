@@ -1,0 +1,6 @@
+{
+  "name": "Neon Warfare",
+  "description": "Massive multiplayer laser tag game with AI-controlled bots that automatically spawn to ensure the game is always playable.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
