@@ -439,15 +439,15 @@ export default function App() {
                 <div className="text-sm border-l-2 border-fuchsia-500 pl-2 bg-fuchsia-500/5 py-1 text-slate-300 uppercase">
                   {me?.weapon || 'REPEATER'}
                 </div>
-                <div className="mt-2 grid grid-cols-2 gap-1">
-                  <button onClick={() => socket?.emit("equip", "repeater")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'repeater' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>1: REPEATER</button>
-                  <button onClick={() => socket?.emit("equip", "blaster")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'blaster' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>2: BLASTER</button>
-                  <button onClick={() => socket?.emit("equip", "scatter")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'scatter' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>3: SCATTER</button>
-                  <button onClick={() => socket?.emit("equip", "sniper")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'sniper' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>4: SNIPER</button>
-                  <button onClick={() => socket?.emit("equip", "cannon")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'cannon' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>5: CANNON</button>
-                  <button onClick={() => socket?.emit("equip", "vulcan")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'vulcan' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>6: VULCAN</button>
-                  <button onClick={() => socket?.emit("equip", "wave")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'wave' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>7: WAVE</button>
-                  <button onClick={() => socket?.emit("equip", "laser")} className={`py-1 px-1 text-[9px] border rounded-sm transition-colors ${me?.weapon === 'laser' ? 'bg-cyan-500/20 border-cyan-500 text-cyan-300' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>8: LASER</button>
+                <div className="mt-2 grid grid-cols-2 gap-2">
+                  <button onClick={() => socket?.emit("equip", "repeater")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'repeater' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>1: REPEATER</button>
+                  <button onClick={() => socket?.emit("equip", "blaster")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'blaster' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>2: BLASTER</button>
+                  <button onClick={() => socket?.emit("equip", "scatter")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'scatter' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>3: SCATTER</button>
+                  <button onClick={() => socket?.emit("equip", "sniper")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'sniper' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>4: SNIPER</button>
+                  <button onClick={() => socket?.emit("equip", "cannon")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'cannon' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>5: CANNON</button>
+                  <button onClick={() => socket?.emit("equip", "vulcan")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'vulcan' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>6: VULCAN</button>
+                  <button onClick={() => socket?.emit("equip", "wave")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'wave' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>7: WAVE</button>
+                  <button onClick={() => socket?.emit("equip", "laser")} className={`py-2 px-1.5 text-[11px] font-extrabold border rounded-md transition-all active:scale-95 ${me?.weapon === 'laser' ? 'bg-cyan-500/20 border-cyan-400 text-cyan-300 shadow-[0_0_10px_rgba(34,211,238,0.25)] font-black' : 'border-slate-700 text-slate-500 hover:border-slate-500'}`}>8: LASER</button>
                 </div>
               </div>
               <div>
@@ -481,12 +481,12 @@ export default function App() {
            onWheel={handleWheel}
         >
           {/* Mobile Weapon Tray */}
-          <div className="absolute top-4 right-4 left-4 lg:hidden flex gap-2 overflow-x-auto hide-scrollbar z-40 pointer-events-auto pb-2">
+          <div className="absolute top-4 right-4 left-4 lg:hidden flex gap-2.5 overflow-x-auto hide-scrollbar z-40 pointer-events-auto pb-3 pt-1 px-1">
             {(["repeater", "blaster", "scatter", "sniper", "cannon", "vulcan", "wave", "laser"] as const).map(w => (
                <button 
                   key={w}
                   onClick={(e) => { e.stopPropagation(); socket?.emit("equip", w); }}
-                  className={`flex-shrink-0 px-3 py-2 text-[10px] uppercase font-bold border rounded-md transition-colors backdrop-blur-sm ${me?.weapon === w ? 'bg-cyan-500/40 border-cyan-400 text-white shadow-[0_0_10px_rgba(34,211,238,0.5)]' : 'bg-slate-900/60 border-slate-700 text-slate-400'}`}
+                  className={`flex-shrink-0 px-5 py-3 text-xs uppercase font-extrabold border rounded-xl transition-all backdrop-blur-md active:scale-95 ${me?.weapon === w ? 'bg-cyan-500/50 border-cyan-300 text-white shadow-[0_0_15px_rgba(34,211,238,0.6)] font-black' : 'bg-slate-900/80 border-slate-700 text-slate-300 hover:border-slate-500'}`}
                >
                  {w}
                </button>
